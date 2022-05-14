@@ -1,16 +1,21 @@
 .faq {
     background-color: #20222e;
+    position: relative;
+    padding: 100px 5%;
 }
 
-.smallTitle {
+.subTitle {
     display: block;
     width: 100%;
     margin-top: 41px;
     color: #3ccf91;
     text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.largeTitle {
+.title {
     color: #ffffff;
     display: block;
     margin-top: 0;
@@ -35,4 +40,10 @@
     font-size: 17px;
     line-height: 24px;
     font-weight: 400;
+}
+
+.content {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
