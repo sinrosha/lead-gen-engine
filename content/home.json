@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "Home Page",
+    "description": "Description of homepage",
+    "keywords": "keywords of homepage",
+    "canonical": "/"
+  },
+  "hero": {}
+}
