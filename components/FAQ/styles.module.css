@@ -1,0 +1,24 @@
+.faq {
+    background-color: #20222e;
+}
+
+.subTitle {
+    color: #3ccf91;
+}
+
+.title {
+    line-height: 60px;
+}
+
+.question {
+    font-size: 20px;
+}
+
+.answer {
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 17px;
+}
+
+.content {
+    max-width: 80%;
+}
