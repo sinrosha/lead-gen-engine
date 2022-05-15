@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'black-bg': '#20222e'
+        'black-bg': '#20222e',
+        'light-green': '#3ccf91'
       },
     },
     fontFamily: {
