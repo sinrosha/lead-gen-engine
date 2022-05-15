@@ -1,49 +1,24 @@
 .faq {
     background-color: #20222e;
-    position: relative;
-    padding: 100px 5%;
 }
 
 .subTitle {
-    display: block;
-    width: 100%;
-    margin-top: 41px;
     color: #3ccf91;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: 24px;
 }
 
 .title {
-    color: #ffffff;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 60px;
-    font-size: 50px;
-    line-height: 50px;
-    font-weight: 700;
-    text-align: center;
+    line-height: 60px;
 }
 
 .question {
-    color: #fff;
     font-size: 20px;
-    font-weight: 700;
-    text-align: left;
 }
 
 .answer {
-    margin-top: 0;
-    margin-bottom: 10px;
     color: hsla(0, 0%, 100%, .8);
     font-size: 17px;
-    line-height: 24px;
-    font-weight: 400;
 }
 
 .content {
     max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
 }
