@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Testimonial = ({testimonials}) => {
   return (
     <section className="py-12 md:py-16 bg-black-bg" id="Testimonail">
@@ -7,7 +9,7 @@ const Testimonial = ({testimonials}) => {
         {testimonials.map( testimonial => (
           <div className="text-center font-poppins w-full md:w-[calc(50%-40px)]" key={testimonial.id}>
             <picture className="img block w-40 mx-auto">
-              <img src={testimonial.img} className="rounded-full" alt={testimonial.name}/>
+              <Image width="120" height="120" src={testimonial.img} className="rounded-full" alt={testimonial.name}/>
             </picture>
             <p className="text-white py-5 md:p-5 text-base md:w-11/12 mx-auto">{testimonial.text}</p>
             <p className="text-slate-400 mb-1 font-poppins">{testimonial.name}</p>

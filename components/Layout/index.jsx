@@ -4,11 +4,11 @@ const Layout = ({content, children}) => {
     <>
       <Meta content={content} />
       <div className="siteWrapper mx-auto">
-        <header>header</header>
+        {/* <header>header</header> */}
         <main>
           {children}
         </main>
-        <footer>Footer</footer>
+        {/* <footer>Footer</footer> */}
       </div>
     </>
   )

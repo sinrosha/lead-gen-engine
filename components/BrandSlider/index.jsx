@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Image from 'next/image'
 // Import Swiper styles
 import 'swiper/css';
 
@@ -9,12 +9,10 @@ const BrandSlider = ({brands}) => {
       <Swiper
         spaceBetween={50}
         slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {brands.map( brand => (
           <SwiperSlide key={brand.id}>
-            <img src={brand.src} alt={brand.name} />
+            <Image width="431" height="94" src={brand.src} alt={brand.name} />
           </SwiperSlide>
         ))}
       </Swiper>

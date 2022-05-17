@@ -15,9 +15,9 @@ const Meta = ({content}) => {
       <link rel="canonical" href={meta.canonical} />
       <meta name="referrer" content="origin" />
 
-      <meta itemprop="name" content={meta.title} />
-      <meta itemprop="description" content={meta.description} />
-      <meta itemprop="image" content={meta.ogImage} />
+      <meta itemProp="name" content={meta.title} />
+      <meta itemProp="description" content={meta.description} />
+      <meta itemProp="image" content={meta.ogImage} />
 
       <meta property="og:url" content="https://www.singhroshan.com" />
       <meta property="og:type" content="website" />
