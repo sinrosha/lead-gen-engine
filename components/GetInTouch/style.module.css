@@ -1,8 +1,0 @@
-.getInTouchSection {
-    background-image: linear-gradient(27deg, #3ccf91 32%, #68d4ff);
-}
-
-.btnBlk:hover {
-    opacity: 0.8;
-    transition: all 0.2s;
-}
