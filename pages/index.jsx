@@ -4,6 +4,7 @@ import Testimonial from "../components/Testimonail"
 import BrandSlider from "../components/BrandSlider"
 import content from "../content/home.json"
 import FAQ from "../components/FAQ"
+import GetInTouch from "../components/GetInTouch/Index"
 
 const Home = () => {
   const testimonialContent = [
@@ -104,6 +105,7 @@ const Home = () => {
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
       <FAQ FAQS={faqs}/>
+      <GetInTouch/>
     </Layout>
   )
 }
