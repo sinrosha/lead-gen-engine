@@ -2,7 +2,7 @@ import React from 'react'
 function GetInTouch() {
   return (
     <section id="CTA">
-      <div className={`relative py-12 md:py-16 bg-light-green ${styles.getInTouchSection}`} 
+      <div className="relative py-12 md:py-16 bg-light-green" 
         style={{"background-image": "linear-gradient(27deg, #3ccf91 32%, #68d4ff)"}}>
         <div className="mx-auto text-center">
           <h4 className='text-white block w-full text-center text-lg font-bold font-sen mb-2.5'>
