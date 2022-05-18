@@ -83,25 +83,26 @@ const Home = () => {
       question: "What if I want to recommend people but don't want to install the Chrome extension ?",
       answer:"Sure. You can this form to send us recommendations "
 
-   },
-   {  id:3,
+    },
+    {  id:3,
       question: "Which are the companies my recommended people get suggested ?",
       answer:"Weekday currently works with over 90 companies from across the globe. Most of them are VC-backed high growth startups."
 
-   },
-   {  id:4,
+    },
+    {  id:4,
       question: "How does the rewards system work at Weekday ?",
       answer:"There are 3 levels to the rewards system.Just for referring people When you are using the extension to refer your friends, you will be prompted if you want to make your LinkedIn connections available for outreach, and also make a selection to refer from your list of connections. You will be rewarded separately to make your LinkedIn connections available and also for each candidate you refer.When they interview. Once your referrals have been contacted by Weekday, if they are looking for jobs, they will begin giving interviews with the companies that we are currently working with."
 
-   },
-   {  id:5,
+    },
+    {  id:5,
       question: "Which are the companies my recommended people get suggested ?",
       answer:" Rewards are given when each referral has the first interview scheduled.When they get hired: When a referral finds a job through Weekday, you will receive an email notifying you that your referral has been hired and will ask you to share your bank details for money transfer. Once the referral joins the company, payment will be disbursed (25% at the time of joining and rest after 3 months of staying)."
-   }  
+    }  
   ]
 
   return (
     <Layout content={content}>
+      {/* <HomeHero /> */}
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
       <FAQ FAQS={faqs}/>

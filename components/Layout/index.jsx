@@ -1,10 +1,11 @@
 import Meta from "../Meta"
+import Header from '../Header'
 const Layout = ({content, children}) => {
   return (
     <>
       <Meta content={content} />
       <div className="siteWrapper mx-auto">
-        {/* <header>header</header> */}
+        <Header />
         <main>
           {children}
         </main>
