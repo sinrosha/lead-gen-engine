@@ -4,7 +4,7 @@ const Testimonial = ({testimonials}) => {
   return (
     <section className="py-12 md:py-16 bg-black-bg" id="Testimonail">
       <h4 className="text-light-green text-center text-lg font-bold font-sen mb-2.5">What customers say about us</h4>
-      <h3 className="font-bold text-center text-white text-5xl font-poppins">Testimonials</h3>
+      <h3 className="font-bold text-center text-white text-3xl md:text-5xl font-poppins">Testimonials</h3>
       <div className="w-4/5 mx-auto flex flex-wrap flex-1 mt-10 md:mt-14 gap-x-4 md:gap-x-10 gap-y-14">
         {testimonials.map( testimonial => (
           <div className="text-center font-poppins w-full md:w-[calc(50%-40px)]" key={testimonial.id}>

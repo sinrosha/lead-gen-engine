@@ -40,37 +40,37 @@ const Home = () => {
   const brands = [
     {
       id: 1,
-      name: "Openbase",
-      src: "/openbase-logo.png"
+      name: "Sony",
+      src: "/logos/sony-logo.png"
     },
-    {
-      id: 2,
-      name: "Openbase",
-      src: "/openbase-logo.png"
-    },
+    // {
+    //   id: 2,
+    //   name: "Samsung",
+    //   src: "/logos/samsung-logo.png"
+    // },
     {
       id: 3,
-      name: "Openbase",
-      src: "/openbase-logo.png"
+      name: "Philips",
+      src: "/logos/philips-logo.png"
     },
     {
       id: 4,
-      name: "Openbase",
-      src: "/openbase-logo.png"
+      name: "Panasonic",
+      src: "/logos/panasonic-logo.png"
     },
     {
       id: 5,
-      name: "Openbase",
-      src: "/openbase-logo.png"
+      name: "Micromax",
+      src: "/logos/micromax-logo.png"
     },
     {
       id: 6,
-      name: "Openbase",
-      src: "/openbase-logo.png"
+      name: "MI",
+      src: "/logos/mi-logo.png"
     },{
       id: 7,
-      name: "Openbase",
-      src: "/openbase-logo.png"
+      name: "LG",
+      src: "/logos/lg-logo.png"
     }
   ]
   const faqs = [
