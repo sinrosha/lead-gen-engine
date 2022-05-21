@@ -4,6 +4,7 @@ import Testimonial from "../components/Testimonail"
 import BrandSlider from "../components/BrandSlider"
 import content from "../content/home.json"
 import FAQ from "../components/FAQ"
+import FloatingCTA from "../components/FloatingCTA"
 import GetInTouch from "../components/GetInTouch/Index"
 
 const Home = () => {
@@ -107,6 +108,7 @@ const Home = () => {
       <Testimonial testimonials={testimonialContent} />
       <FAQ FAQS={faqs}/>
       <GetInTouch/>
+      <FloatingCTA />
     </Layout>
   )
 }
