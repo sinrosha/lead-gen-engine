@@ -4,6 +4,7 @@ import Testimonial from "../components/Testimonail"
 import BrandSlider from "../components/BrandSlider"
 import content from "../content/home.json"
 import FAQ from "../components/FAQ"
+import FloatingCTA from "../components/FloatingCTA"
 import GetInTouch from "../components/GetInTouch/Index"
 import Recommended from "../components/Recommended/index"
 
@@ -124,12 +125,14 @@ const Home = () => {
   ]
   return (
     <Layout content={content}>
-      {/* <HomeHero /> */}
+      <HomeHero />
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
       <Recommended RECOMMEND={recommend}/>
       <FAQ FAQS={faqs}/>
       <GetInTouch />
+      <GetInTouch/>
+      <FloatingCTA />
     </Layout>
   )
 }
