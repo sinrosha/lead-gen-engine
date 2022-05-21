@@ -5,6 +5,7 @@ import BrandSlider from "../components/BrandSlider"
 import content from "../content/home.json"
 import FAQ from "../components/FAQ"
 import GetInTouch from "../components/GetInTouch/Index"
+import Recommended from "../components/Recommended/index"
 
 const Home = () => {
   const testimonialContent = [
@@ -99,14 +100,36 @@ const Home = () => {
       answer:" Rewards are given when each referral has the first interview scheduled.When they get hired: When a referral finds a job through Weekday, you will receive an email notifying you that your referral has been hired and will ask you to share your bank details for money transfer. Once the referral joins the company, payment will be disbursed (25% at the time of joining and rest after 3 months of staying)."
     }  
   ]
-
+  const recommend =[
+    {
+      id:1,
+      para: "top job openings",
+      img: "/one.png"
+    },
+    {
+      id:2,
+      para: "connected to founders",
+      img: "/two.png"
+    },
+    {
+      id:3,
+      para: "Salary hike",
+      img: "/three.png"
+    },
+    {
+      id:4,
+      para: "career advice",
+      img: "/four.png"
+    },
+  ]
   return (
     <Layout content={content}>
       {/* <HomeHero /> */}
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
+      <Recommended RECOMMEND={recommend}/>
       <FAQ FAQS={faqs}/>
-      <GetInTouch/>
+      <GetInTouch />
     </Layout>
   )
 }
