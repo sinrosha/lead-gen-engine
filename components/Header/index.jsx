@@ -8,8 +8,8 @@ const Header = () => {
           HandyMan
         </div>
         <div className="cta px-4 py-1 md:px-6 md:py-2 rounded-md bg-light-green">
-          <a href="tel:7020912120" className="font-medium md:font-semibold text-sm md:font-base">
-            7020912120
+          <a href="tel:7020912120" className="font-medium md:font-semibold md:font-base text-white font-sen">
+            Call Us
           </a>
         </div>
       </div>

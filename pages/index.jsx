@@ -102,7 +102,7 @@ const Home = () => {
 
   return (
     <Layout content={content}>
-      {/* <HomeHero /> */}
+      <HomeHero />
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
       <FAQ FAQS={faqs}/>

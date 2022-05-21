@@ -9,7 +9,8 @@ module.exports = {
         'black-bg': '#20222e',
         'light-green': '#3ccf91',
         "light-grey": "hsla(0, 0%, 100%, .8)",
-        "light-blue": "linear-gradient(27deg,#3ccf91 32%,#68d4ff)"
+        "light-blue": "linear-gradient(27deg,#3ccf91 32%,#68d4ff)",
+        "form-bg": "#00000029"
       },
     },
     fontFamily: {
@@ -17,5 +18,7 @@ module.exports = {
       sen: ['Sen', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
