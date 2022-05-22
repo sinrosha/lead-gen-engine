@@ -7,6 +7,7 @@ import FAQ from "../components/FAQ"
 import FloatingCTA from "../components/FloatingCTA"
 import GetInTouch from "../components/GetInTouch/Index"
 import Recommended from "../components/Recommended/index"
+import Number from "../components/Number/index"
 
 const Home = () => {
   const testimonialContent = [
@@ -121,7 +122,33 @@ const Home = () => {
       id:4,
       para: "career advice",
       img: "/four.png"
+    }
+  ]
+  const nums=[
+    {
+      id:1,
+      para: "top job openings",
+      img: "/num-one-logo.png",
+      text: "2500+"
     },
+    {
+      id:2,
+      para: "Positive Feedback",
+      img: "/num-two.png",
+      text:"3x"
+    },
+    {
+      id:3,
+      para: "Weekly Interviews",
+      img: "/num-three-logo.png",
+      text: "93%"
+    },
+    {
+      id:4,
+      para: "scouts as of now ",
+      img: "/num-four.png",
+      text: "150k+"
+    }
   ]
   return (
     <Layout content={content}>
@@ -129,9 +156,9 @@ const Home = () => {
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
       <Recommended RECOMMEND={recommend}/>
+      <Number number={nums}/>
       <FAQ FAQS={faqs}/>
       <GetInTouch />
-      <GetInTouch/>
       <FloatingCTA />
     </Layout>
   )

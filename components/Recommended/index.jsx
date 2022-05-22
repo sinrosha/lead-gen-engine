@@ -12,7 +12,7 @@ function index({RECOMMEND}) {
                          RECOMMEND.map((data)=>{
                              return (
                                
-                                <div className="feature-wrapper flex flex-row items-center justify-center mr-4 mb-4 pt-2 pr-6 pb-2 pl-3 rounded-full transition-all bg-light-green">
+                                <div className="feature-wrapper flex flex-row items-center mr-4 mb-4 pt-2 pr-6 pb-2 pl-3 rounded-full transition-all bg-light-green w-full md:w-auto">
                                      <div className='w-12 h-12 bg-black-bg rounded-full flex flex-row items-center justify-center'><img className='w-6 h-6 m-0' src={data.img} alt="" /></div>
                                      <p className='mt-0 text-white font-sen text-lg pl-2'>{data.para}</p>
                                  </div>
