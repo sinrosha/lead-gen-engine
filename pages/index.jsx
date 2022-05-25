@@ -6,6 +6,8 @@ import content from "../content/home.json"
 import FAQ from "../components/FAQ"
 import FloatingCTA from "../components/FloatingCTA"
 import GetInTouch from "../components/GetInTouch/Index"
+import Featurelist from "../components/Featurelist"
+import Stats from "../components/Stats"
 
 const Home = () => {
   const testimonialContent = [
@@ -100,14 +102,65 @@ const Home = () => {
       answer:" Rewards are given when each referral has the first interview scheduled.When they get hired: When a referral finds a job through Weekday, you will receive an email notifying you that your referral has been hired and will ask you to share your bank details for money transfer. Once the referral joins the company, payment will be disbursed (25% at the time of joining and rest after 3 months of staying)."
     }  
   ]
+  const features = [
+    {
+      id:1,
+      para: "top job openings",
+      img: "/one.png"
+    },
+    {
+      id:2,
+      para: "connected to founders",
+      img: "/two.png"
+    },
+    {
+      id:3,
+      para: "Salary hike",
+      img: "/three.png"
+    },
+    {
+      id:4,
+      para: "career advice",
+      img: "/four.png"
+    }
+  ]
 
+  const stats = [
+    {
+      id:1,
+      para: "top job openings",
+      img: "/num-one-logo.png",
+      text: "2500+"
+    },
+    {
+      id:2,
+      para: "Positive Feedback",
+      img: "/num-two.png",
+      text:"3x"
+    },
+    {
+      id:3,
+      para: "Weekly Interviews",
+      img: "/num-three-logo.png",
+      text: "93%"
+    },
+    {
+      id:4,
+      para: "scouts as of now ",
+      img: "/num-four.png",
+      text: "150k+"
+    }
+  ]
+  
   return (
     <Layout content={content}>
       <HomeHero />
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
+      <Featurelist features={features}/>
+      <Stats stats={stats}/>
       <FAQ FAQS={faqs}/>
-      <GetInTouch/>
+      <GetInTouch />
       <FloatingCTA />
     </Layout>
   )
