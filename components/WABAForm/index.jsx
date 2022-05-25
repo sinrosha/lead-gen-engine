@@ -81,7 +81,7 @@ const WABAForm = () => {
     const areInputsValid = validateInputs();
     if(areInputsValid) {
       var myHeaders = new Headers();
-      myHeaders.append("Authorization", "Bearer EAAHjvHQlgOUBAI0CICXwyArbrOKUIKvvEoZAXGtNjojESKeXjosGsWdJUfWZCvrcndMQWZB0mWWNyLwQzBL0xyceotBLDoh3OX53t16no83DI0vnIuKeSJySEVOQW7VeQkSQwuQRdzoOZCGrdV6xZB7URCwSy7MomgbXDoak1ClPZBvdUQTznj");
+      myHeaders.append("Authorization", `Bearer ${process.env.NEXT_PUBLIC_WHATSAPP_TOKEN}`);
       myHeaders.append("Content-Type", "application/json");
 
       const phoneZeroRemoved = phone.slice(0,1) === 0 ? phone.slice(1) : phone;
