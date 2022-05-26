@@ -10,6 +10,8 @@ const WABAForm = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isNameValid, setIsNameValid] = useState(true);
   const [isNumberValid, setIsNumberValid] = useState(true);
+  const [submissionError, setSubmissionError] = useState(false);
+  const [apiResponse, setApiResponse] = useState("");
 
   const checkOnlyNumbers = (number) => {
     if(!/\D/.test(number)) {
@@ -71,13 +73,18 @@ const WABAForm = () => {
     fetch("https://sheet.best/api/sheets/eac98bf2-c23f-424d-8c93-7b96a933c0cb", requestOptions)
       .then(response => {
         setFormSubmitted(true);
-        console.log(response.json(), "JSON");
+        setApiResponse("We have received your request. Our technician will call you shortly.");
       })
-      .catch(error => console.log('error', error));
+      .catch(error => {
+        setFormSubmitted(true);
+        setSubmissionError(true);
+        setApiResponse("We have received your request. Our technician will call you shortly.");
+      });
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setApiResponse("");
     const areInputsValid = validateInputs();
     if(areInputsValid) {
       var myHeaders = new Headers();
@@ -92,10 +99,19 @@ const WABAForm = () => {
         "to": phoneWithCountryCode,
         "type": "template",
         "template": {
-          "name": "hello_world",
+          "name": "welcome",
           "language": {
-            "code": "en_US"
-          }
+            "code": "en"
+          },
+          "components": [{
+            "type": "HEADER",
+            "parameters": [
+                {
+                    "type": "text",
+                    "text": `${name}`
+                }
+            ]
+          }]
         }
       });
   
@@ -110,9 +126,19 @@ const WABAForm = () => {
         .then(response => {
           if(response.status == 200) {
             sendLeadToSheet();
+          } else if(response.status == 400) {
+            sendLeadToSheet();
+            setFormSubmitted(true);
+            setSubmissionError(true);
+            setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only")
           }
         })
-        .catch(error => console.log('error', error));
+        .catch(error => {
+          sendLeadToSheet();
+          setFormSubmitted(true);
+          setSubmissionError(true);
+          setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only")
+        });
     }
   }
 
@@ -133,7 +159,7 @@ const WABAForm = () => {
           {!isNameValid && <p className="error text-red-500 absolute bottom-0 text-sm">Please enter your name</p>}
         </div>
         <div className='form-row flex flex-col pb-6 relative'>
-          <label htmlFor='phone' className="text-white text-base font-sen pb-2">Mobile Number</label>
+          <label htmlFor='phone' className="text-white text-base font-sen pb-2">WhatsApp Number</label>
           <input 
             id='phone'
             name='phone'
@@ -151,7 +177,7 @@ const WABAForm = () => {
         <div className="success">
           <TiTick size={70} className="mx-auto "/>
         </div>
-        <h3 className="pb-6 text-lg md:text-2xl">We have received your request. Our technician will call you shortly.</h3>
+        <h3 className="pb-6 text-lg md:text-2xl">{apiResponse}</h3>
         <button className="px-4 py-1 md:px-6 md:py-2 text-base rounded-md bg-light-green" onClick={() => setFormSubmitted(false)}>Submit New</button>
       </div>        
     </div>
