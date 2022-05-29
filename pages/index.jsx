@@ -120,7 +120,7 @@ const Home = () => {
     },
     {
       id:4,
-      para: "Top highly qualified and skilled technician",
+      para: "Highly skilled technician",
       img: "/four.png"
     }
   ]
@@ -158,7 +158,7 @@ const Home = () => {
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
       <Featurelist features={features}/>
-      <Stats stats={stats}/>
+      {/* <Stats stats={stats}/> */}
       <FAQ FAQS={faqs}/>
       <GetInTouch />
       <FloatingCTA />

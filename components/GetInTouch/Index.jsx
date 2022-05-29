@@ -8,10 +8,10 @@ function GetInTouch() {
           <h4 className='text-white block w-full text-center text-lg font-bold font-sen mb-2.5'>
             Get in touch
           </h4>
-          <h3 className='text-white text-7xl font-semibold text-center font-poppins mt-5 mb-3'>
+          <h3 className='text-white px-4  text-3xl md:text-5xl font-semibold text-center font-poppins mt-5 mb-3'>
             Ready to Experience the service?
           </h3>
-          <button className="bg-black-bg inline-block py-3 px-6 font-sen text-white font-bold text-sm rounded mt-8 hover:opacity-80 transition">BOOK DEMO</button>
+          <a href='tel:918459982237' className="bg-black-bg inline-block py-3 px-6 font-sen text-white font-bold text-sm rounded mt-8 hover:opacity-80 transition">BOOK DEMO</a>
         </div>
       </div>
     </section>

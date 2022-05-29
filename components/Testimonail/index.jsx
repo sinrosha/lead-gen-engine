@@ -11,7 +11,7 @@ const Testimonial = ({testimonials}) => {
             <picture className="img block w-40 mx-auto">
               <Image width="120" height="120" src={testimonial.img} className="rounded-full" alt={testimonial.name}/>
             </picture>
-            <p className="text-white py-5 md:p-5 text-base md:w-11/12 mx-auto h-28">{testimonial.text}</p>
+            <p className="text-white py-5 md:p-5 text-base md:w-11/12 mx-auto">{testimonial.text}</p>
             <p className="text-slate-400 mb-1 font-poppins">{testimonial.name}</p>
             <p className="text-slate-300 font-poppins">{testimonial.designation}</p>
           </div>
