@@ -6,8 +6,8 @@ import content from "../content/home.json"
 import FAQ from "../components/FAQ"
 import FloatingCTA from "../components/FloatingCTA"
 import GetInTouch from "../components/GetInTouch/Index"
-import Recommended from "../components/Recommended/index"
-import Number from "../components/Number/index"
+import Featurelist from "../components/Featurelist"
+import Stats from "../components/Stats"
 
 const Home = () => {
   const testimonialContent = [
@@ -102,7 +102,7 @@ const Home = () => {
       answer:" Rewards are given when each referral has the first interview scheduled.When they get hired: When a referral finds a job through Weekday, you will receive an email notifying you that your referral has been hired and will ask you to share your bank details for money transfer. Once the referral joins the company, payment will be disbursed (25% at the time of joining and rest after 3 months of staying)."
     }  
   ]
-  const recommend =[
+  const features = [
     {
       id:1,
       para: "top job openings",
@@ -124,7 +124,8 @@ const Home = () => {
       img: "/four.png"
     }
   ]
-  const nums=[
+
+  const stats = [
     {
       id:1,
       para: "top job openings",
@@ -150,13 +151,14 @@ const Home = () => {
       text: "150k+"
     }
   ]
+  
   return (
     <Layout content={content}>
       <HomeHero />
       <BrandSlider brands={brands}/>
       <Testimonial testimonials={testimonialContent} />
-      <Recommended RECOMMEND={recommend}/>
-      <Number number={nums}/>
+      <Featurelist features={features}/>
+      <Stats stats={stats}/>
       <FAQ FAQS={faqs}/>
       <GetInTouch />
       <FloatingCTA />
