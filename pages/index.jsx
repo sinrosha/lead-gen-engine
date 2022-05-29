@@ -13,31 +13,31 @@ const Home = () => {
   const testimonialContent = [
     {
       id: 1,
-      img: "/testimonial.jpeg",
-      text: "I am really happy to see a platform which can be super-personalised to do an outreach and then the number of quality responses coming back. Its a platform which can really do best quality sourcing and makes it simple to close senior leadership tech-hires in no time",
-      name: "Saurabh Gupta",
-      designation: "CEO, UrbanPiper"
+      img: "/adhiraj-img.jpg",
+      text: "This service center is very helpful for me. I am 100% satisfied with their positive results. Thanks to all the team members of Handyman services.",
+      name: "Adhiraj Singh",
+      designation: "Software engineer, Giift India Pvt Ltd"
     },
     {
       id: 2,
-      img: "/testimonial.jpeg",
-      text: "I am really happy to see a platform which can be super-personalised to do an outreach and then the number of quality responses coming back. Its a platform which can really do best quality sourcing and makes it simple to close senior leadership tech-hires in no time",
-      name: "Pryce Adade-Yebesi",
-      designation: "Co-Founder, Utopia Labs"
+      img: "/shanu-img.jpg",
+      text: "This center is very coordinating and quite helpful.They ensure 100% compliance.Best wishes to all the employees.",
+      name: "Shanu Sharma",
+      designation: "QA engineer, Infosys"
     },
     {
       id: 3,
-      img: "/testimonial.jpeg",
-      text: "I am really happy to see a platform which can be super-personalised to do an outreach and then the number of quality responses coming back. Its a platform which can really do best quality sourcing and makes it simple to close senior leadership tech-hires in no time",
-      name: "Srijan Shetty",
-      designation: "CTO, FanStan"
+      img: "/farhan-img.jpg",
+      text: "Great service..!!! No worries of any sort ..or of any type of TV...all sort of TV reparis available...",
+      name: "Farhan Khan",
+      designation: "Youtuber"
     },
     {
       id: 4,
-      img: "/testimonial.jpeg",
-      text: "I am really happy to see a platform which can be super-personalised to do an outreach and then the number of quality responses coming back. Its a platform which can really do best quality sourcing and makes it simple to close senior leadership tech-hires in no time",
-      name: "Harsh",
-      designation: "Founder, Homework App"
+      img: "/kolte-img.jpg",
+      text: "hey were really fast. They sent the technician within 1 hour of my booking. He picked the TV, got the screen replaced and delivered it back the same day.",
+      name: "Ajinkya kolte",
+      designation: "Network Architect, KPMG"
     }
   ];
   const brands = [
@@ -78,49 +78,49 @@ const Home = () => {
   ]
   const faqs = [
     { id:1,
-      question: "How do you recommend someone to Weekday for jobs ?",
-      answer:" The Chrome extension works in tandem with your LinkedIn profile. You will be given a choice of your connections to choose from to recommend to Weekday. Based on the number of recommendations, you will earn rewards."
+      question: "Are you factory trained and authorized to provide warranty and service contract repairs?",
+      answer:" Yes, it’s very important that a factory authorized service center work on your appliance.  They have training and tech support available for all the up to date service bulletins software updates and product information on your appliance or television."
     },
     {
       id:2,
-      question: "What if I want to recommend people but don't want to install the Chrome extension ?",
-      answer:"Sure. You can this form to send us recommendations "
+      question: "Can I expect a professional to come into my home?",
+      answer:"All our technicians are fully trained and insured and have passed a yearly comprehensive background check, driving record and drug test. "
 
     },
     {  id:3,
-      question: "Which are the companies my recommended people get suggested ?",
-      answer:"Weekday currently works with over 90 companies from across the globe. Most of them are VC-backed high growth startups."
+      question: "What TV brands do you repair?",
+      answer:" We repair all TV brands."
 
     },
     {  id:4,
-      question: "How does the rewards system work at Weekday ?",
-      answer:"There are 3 levels to the rewards system.Just for referring people When you are using the extension to refer your friends, you will be prompted if you want to make your LinkedIn connections available for outreach, and also make a selection to refer from your list of connections. You will be rewarded separately to make your LinkedIn connections available and also for each candidate you refer.When they interview. Once your referrals have been contacted by Weekday, if they are looking for jobs, they will begin giving interviews with the companies that we are currently working with."
+      question: "How long does it take to repair a TV?",
+      answer:"Most sets can be repaired by the next business day. It may take longer if we have to diagnose an uncommon problem (like problems caused by pests or power surges). The biggest factor in repair time is parts availability. If parts are not found in San Antonio, ground shipping from the most common distributors can take 4-5 business days."
 
     },
     {  id:5,
-      question: "Which are the companies my recommended people get suggested ?",
-      answer:" Rewards are given when each referral has the first interview scheduled.When they get hired: When a referral finds a job through Weekday, you will receive an email notifying you that your referral has been hired and will ask you to share your bank details for money transfer. Once the referral joins the company, payment will be disbursed (25% at the time of joining and rest after 3 months of staying)."
+      question: "What form of payments to you accept?",
+      answer:"We accept Cash, Checks and all major credit cards at time of service."
     }  
   ]
   const features = [
     {
       id:1,
-      para: "top job openings",
+      para: "Sameday service",
       img: "/one.png"
     },
     {
       id:2,
-      para: "connected to founders",
+      para: "1 year guarantee service",
       img: "/two.png"
     },
     {
       id:3,
-      para: "Salary hike",
+      para: "Rs 150 service charge",
       img: "/three.png"
     },
     {
       id:4,
-      para: "career advice",
+      para: "Top highly qualified and skilled technician",
       img: "/four.png"
     }
   ]

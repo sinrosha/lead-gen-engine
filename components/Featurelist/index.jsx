@@ -4,8 +4,8 @@ function Featurelist({features}) {
     <section id="Featurelist" className="relative py-12 md:py-16 bg-black-bg">
       <div className="row flex flex-col items-center justify-between mx-auto row w-4/5 md:flex-row">
         <div className="col-md-6 w-full md:w-2/4">
-          <h4 className='text-light-green text-left text-lg font-bold font-sen mb-2.5'>What do recommended engineers get?</h4>
-          <h3 className='font-bold text-left text-white text-3xl md:text-5xl font-poppins'><strong>Top five reasons why your friends will love it </strong></h3>
+          <h4 className='text-light-green text-left text-lg font-bold font-sen mb-2.5'>Why choose us?</h4>
+          <h3 className='font-bold text-left text-white text-3xl md:text-5xl font-poppins'><strong>Top four reasons why we are the best</strong></h3>
           <div className="flex feature mx-auto flex-col justify-center mt-14 items-start">
             {
               features.map((data)=>{
@@ -23,7 +23,7 @@ function Featurelist({features}) {
           </div>
         </div>
         <div className="col-md-6 w-full md:w-2/4 flex mt-6 md:mt-0 flex-col items-center justify-center">
-          <Image src="/placholder-400x500.png" alt="placeholder" width="400" height="500"/>
+          <Image src="/tv-repair.webp" className='w-100 object-cover rounded-full' alt="placeholder" width="450" height="450"/>
         </div>
       </div>
     </section>
