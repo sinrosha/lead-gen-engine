@@ -3,7 +3,7 @@ import React from 'react'
 function index({RECOMMEND}) {
   return (
     <section id="Recommended" className="relative py-12 md:py-16 bg-black-bg">
-            <div className="row flex flex-col items-center justify-between mx-auto row w-4/5 md:flex-row">
+            <div className="row flex flex-col items-center justify-between mx-auto w-4/5 md:flex-row">
                 <div className="col-md-6 w-full md:w-2/4">
                    <h4 className='text-light-green text-left text-lg font-bold font-sen mb-2.5'>What do recommended engineers get?</h4>
                    <h3 className='font-bold text-left text-white text-3xl md:text-5xl font-poppins'><strong>Top five reasons why your friends will love it </strong></h3>

@@ -46,11 +46,11 @@ const Home = () => {
       name: "Sony",
       src: "/logos/sony-logo.png"
     },
-    // {
-    //   id: 2,
-    //   name: "Samsung",
-    //   src: "/logos/samsung-logo.png"
-    // },
+     {
+       id: 2,
+       name: "Samsung",
+       src: "/logos/samsung-logo.png"
+     },
     {
       id: 3,
       name: "Philips",
