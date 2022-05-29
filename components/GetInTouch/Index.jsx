@@ -9,7 +9,7 @@ function GetInTouch() {
             Get in touch
           </h4>
           <h3 className='text-white text-7xl font-semibold text-center font-poppins mt-5 mb-3'>
-            Ready to hire?
+            Ready to Experience the service?
           </h3>
           <button className="bg-black-bg inline-block py-3 px-6 font-sen text-white font-bold text-sm rounded mt-8 hover:opacity-80 transition">BOOK DEMO</button>
         </div>
