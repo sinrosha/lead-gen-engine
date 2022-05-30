@@ -12,7 +12,7 @@ const WABAForm = () => {
   const [isNameValid, setIsNameValid] = useState(true);
   const [isNumberValid, setIsNumberValid] = useState(true);
   const [submissionError, setSubmissionError] = useState(false);
-  const [apiResponse, setApiResponse] = useState("");
+  const [apiResponse, setApiResponse] = useState("We have received your request. Our technician will call you shortly.");
   const [loading, setLoading] = useState(false);
 
   const checkOnlyNumbers = (number) => {
@@ -81,14 +81,13 @@ const WABAForm = () => {
       .catch(error => {
         setFormSubmitted(true);
         setSubmissionError(true);
-        setApiResponse("We have received your request. Our technician will call you shortly.");
+        setApiResponse("Currently, we are not able to take your submission. Please call us on 8459982237");
         setLoading(false);
       });
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setApiResponse("");
     setLoading(true);
     const areInputsValid = validateInputs();
     if(areInputsValid) {

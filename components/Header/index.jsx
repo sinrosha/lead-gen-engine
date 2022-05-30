@@ -8,7 +8,7 @@ const Header = () => {
           <Image src="/android-icon-36x36.png" width="32" height="32" alt="Logo" /> <span className="pl-2 md:pl-4">HandyMan</span>
         </div>
         <div className="cta px-4 py-1 md:px-6 md:py-2 rounded-md bg-pink">
-          <a href="tel:7020912120" className="font-medium md:font-semibold md:font-base text-white font-sen">
+          <a href="tel:918459982237" className="font-medium md:font-semibold md:font-base text-white font-sen">
             Call Us
           </a>
         </div>
