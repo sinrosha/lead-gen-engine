@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { TiTick } from 'react-icons/ti';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 const WABAForm = () => {
   const [formFields, setFormFields] =  useState({
@@ -12,6 +13,7 @@ const WABAForm = () => {
   const [isNumberValid, setIsNumberValid] = useState(true);
   const [submissionError, setSubmissionError] = useState(false);
   const [apiResponse, setApiResponse] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const checkOnlyNumbers = (number) => {
     if(!/\D/.test(number)) {
@@ -74,17 +76,20 @@ const WABAForm = () => {
       .then(response => {
         setFormSubmitted(true);
         setApiResponse("We have received your request. Our technician will call you shortly.");
+        setLoading(false);
       })
       .catch(error => {
         setFormSubmitted(true);
         setSubmissionError(true);
         setApiResponse("We have received your request. Our technician will call you shortly.");
+        setLoading(false);
       });
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setApiResponse("");
+    setLoading(true);
     const areInputsValid = validateInputs();
     if(areInputsValid) {
       var myHeaders = new Headers();
@@ -130,21 +135,23 @@ const WABAForm = () => {
             sendLeadToSheet();
             setFormSubmitted(true);
             setSubmissionError(true);
-            setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only")
+            setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only");
+            setLoading(false);
           }
         })
         .catch(error => {
           sendLeadToSheet();
           setFormSubmitted(true);
           setSubmissionError(true);
-          setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only")
+          setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only");
+          setLoading(false);
         });
     }
   }
 
   return (
     <div className="form mt-16 lg:mt-0 p-8 md:p-12 bg-form-bg rounded-md w-72 md:w-96 relative">
-      <form action="" className={`max-w-md ${formSubmitted ? "invisible" : ""}`}>
+      <form action="" className={`max-w-md ${formSubmitted ? "invisible" : ""} ${loading ? "invisible" : ""}`}>
         <div className='form-row flex flex-col pb-6 relative'>
           <label htmlFor='name' className="text-white text-base font-sen pb-2">Name</label>
           <input 
@@ -179,7 +186,13 @@ const WABAForm = () => {
         </div>
         <h3 className="pb-6 text-lg md:text-2xl">{apiResponse}</h3>
         <button className="px-4 py-1 md:px-6 md:py-2 text-base rounded-md bg-pink" onClick={() => setFormSubmitted(false)}>Submit New</button>
-      </div>        
+      </div>
+      <div className={`w-full px-8 text-center font-sen  text-white text-2xl absolute top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 ${loading ? "" : "invisible"} h-full flex justify-center items-center flex-col bg-form-bg z-40`}>
+        <div className="loading">
+          <AiOutlineLoading3Quarters size={70} className="mx-auto animate-spin"/>
+        </div>
+        <h3 className="pb-6 text-lg md:text-2xl mt-6">Submitting</h3>
+      </div>         
     </div>
   )
 };
