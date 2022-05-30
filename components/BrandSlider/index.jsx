@@ -3,7 +3,7 @@ import Image from 'next/image'
 const BrandSlider = ({brands}) => {
   return (
     <section id="BrandSlider" className="bg-black-bg py-12 md:py-16 ">
-      <h4 className="text-light-green text-center text-lg font-bold font-sen mb-2.5">Brands</h4>
+      <h4 className="text-pink text-center text-lg font-bold font-sen mb-2.5">Brands</h4>
       <h3 className="font-bold text-center text-white text-3xl md:text-5xl font-poppins px-4">Some of the Brands we work on</h3>
       <div className="mx-auto flex flex-wrap justify-center md:justify-between px-8 w-4/5 pt-8 gap-5">
         {brands.map( brand => (

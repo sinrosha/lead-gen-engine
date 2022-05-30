@@ -10,7 +10,8 @@ module.exports = {
                 'light-green': '#3ccf91',
                 "light-grey": "hsla(0, 0%, 100%, .8)",
                 "light-blue": "linear-gradient(27deg,#3ccf91 32%,#68d4ff)",
-                "form-bg": "#00000029"
+                "form-bg": "#00000029",
+                "pink": "#ff3964"
             },
         },
         fontFamily: {

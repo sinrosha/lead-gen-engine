@@ -171,14 +171,14 @@ const WABAForm = () => {
           />
           {!isNumberValid && <p className="error text-red-500 absolute bottom-0 text-sm">Please enter your phone mumber</p>}
         </div>
-        <button className="px-4 py-1 md:px-6 md:py-2 text-white text-lg font-sen rounded-md bg-light-green mt-2 block" onClick={handleSubmit}>Submit</button>
+        <button className="px-4 py-1 md:px-6 md:py-2 text-white text-lg font-sen rounded-md bg-pink mt-2 block" onClick={handleSubmit}>Submit</button>
       </form>
       <div className={`w-full px-8 text-center font-sen  text-white text-2xl absolute top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 ${formSubmitted ? "" : "invisible"}`}>
         <div className="success">
           <TiTick size={70} className="mx-auto "/>
         </div>
         <h3 className="pb-6 text-lg md:text-2xl">{apiResponse}</h3>
-        <button className="px-4 py-1 md:px-6 md:py-2 text-base rounded-md bg-light-green" onClick={() => setFormSubmitted(false)}>Submit New</button>
+        <button className="px-4 py-1 md:px-6 md:py-2 text-base rounded-md bg-pink" onClick={() => setFormSubmitted(false)}>Submit New</button>
       </div>        
     </div>
   )

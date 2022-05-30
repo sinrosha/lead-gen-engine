@@ -4,7 +4,7 @@ function Stats({stats}) {
     <section id="Stats" className='py-12 bg-black-bg'>
       <div className='mx-auto w-full md:w-4/5'>
         <div className='flex flex-row justify-center mb-6'>
-          <h4 className='text-light-green text-left text-lg font-bold font-sen'>Our customers get access to</h4>
+          <h4 className='text-pink text-left text-lg font-bold font-sen'>Our customers get access to</h4>
         </div>
         <div className='flex md:flex-row flex-col items-center justify-between'>
           {stats.map((stat)=>{
