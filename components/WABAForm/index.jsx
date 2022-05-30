@@ -135,7 +135,6 @@ const WABAForm = () => {
             sendLeadToSheet();
             setFormSubmitted(true);
             setSubmissionError(true);
-            setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only");
             setLoading(false);
           }
         })
@@ -143,7 +142,6 @@ const WABAForm = () => {
           sendLeadToSheet();
           setFormSubmitted(true);
           setSubmissionError(true);
-          setApiResponse("Sorry was not able to submit the form, use WhatsApp Number only");
           setLoading(false);
         });
     }
