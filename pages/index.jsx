@@ -161,7 +161,6 @@ const Home = () => {
       {/* <Stats stats={stats}/> */}
       <FAQ FAQS={faqs}/>
       <GetInTouch />
-      <FloatingCTA />
     </Layout>
   )
 }
