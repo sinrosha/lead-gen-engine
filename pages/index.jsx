@@ -4,10 +4,8 @@ import Testimonial from "../components/Testimonail"
 import BrandSlider from "../components/BrandSlider"
 import content from "../content/home.json"
 import FAQ from "../components/FAQ"
-import FloatingCTA from "../components/FloatingCTA"
 import GetInTouch from "../components/GetInTouch/Index"
 import Featurelist from "../components/Featurelist"
-import Stats from "../components/Stats"
 
 const Home = () => {
   const testimonialContent = [
