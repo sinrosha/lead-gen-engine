@@ -7,7 +7,7 @@ const HomeHero = () => {
         <div className="content">
           <h1 className="text-white text-4xl leading-tight md:leading-snug md:text-5xl font-sen">HandyMan LCD LED TV <br className="hidden lg:block" /> Repair and Services</h1>
           <p className="text-white text-xl font-poppins py-6 md:py-8 leading-normal ">We repair LCD, LED TV of all brands all over Mumbai.</p>
-          <a href="tel:918459982237" className="font-medium inline-block md:font-semibold md:font-base px-3 py-1 md:px-6 md:py-2 rounded-md bg-pink text-white font-sen">
+          <a href="tel:08459982237" className="font-medium inline-block md:font-semibold md:font-base px-3 py-1 md:px-6 md:py-2 rounded-md bg-pink text-white font-sen">
             Click to call us
           </a>
         </div>
