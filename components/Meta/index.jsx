@@ -64,6 +64,23 @@ const Meta = ({content}) => {
         __html: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());gtag('config', 'G-E5EB756ZQ3')"
       }}
     />
+
+    <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=AW-10904157007"></Script>
+    <Script
+      id="3"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());gtag('config', 'AW-10904157007');"
+      }}
+    />
+
+    <Script
+      id="4"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: "gtag('event', 'conversion', {'send_to':'AW-10904157007/gO9RCP6wy8YDEM_2wM8o'})"
+      }}
+    />
   </>
   )
 }
