@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Testimonial = ({testimonials}) => {
   return (
-    <section className="py-12 md:py-16 bg-[#20222eeb] bg-cover bg-no-repeat bg-center" style={{'background-image': 'url(/bg-one.jpg)'}} id="Testimonail">
+    <section className="py-12 md:py-16 bg-[#20222eeb] bg-cover bg-no-repeat bg-center" style={{'backgroundImage': 'url(/bg-one.jpg)'}} id="Testimonail">
       <h4 className="text-pink text-center text-lg font-bold font-sen mb-2.5">What customers say about us</h4>
       <h3 className="font-bold text-center text-white text-3xl md:text-5xl font-poppins">Testimonials</h3>
       <div className="w-4/5 mx-auto flex flex-wrap flex-1 mt-10 md:mt-14 gap-x-4 md:gap-x-10 gap-y-14">
