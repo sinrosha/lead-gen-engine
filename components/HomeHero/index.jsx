@@ -3,8 +3,8 @@ import WABAForm from "../WABAForm"
 const HomeHero = () => {
   return (
     <section style={{'backgroundImage': 'url(/bg-one.jpg)'}} className="py-12 md:py-16 bg-cover bg-no-repeat bg-center bg-scroll" id="Hero">
-      <div className="w-4/5 mx-auto flex flex-col lg:flex-row justify-between items-center">
-        <div className="content w-80 md:w-auto">
+      <div className="w-10/12 md:w-4/5 mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className="content md:w-auto">
           <h1 className="text-white text-4xl leading-tight md:leading-snug md:text-5xl font-sen">HandyMan LCD LED TV <br className="hidden lg:block" /> Repair and Services</h1>
           <p className="text-white text-xl font-poppins py-6 md:py-8 leading-normal ">We repair LCD, LED TV of all brands all over Mumbai.</p>
           <div className="">
