@@ -16,18 +16,10 @@ const WABAForm = () => {
   const [loading, setLoading] = useState(false);
 
   const checkOnlyNumbers = (number) => {
-    if(!/\D/.test(number)) {
+    if(!/\D/.test(number) && number.length === 10) {
       return true;
     }
     return false;
-  }
-
-  const getDate = () => {
-    let today = new Date();
-    let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    let yyyy = today.getFullYear();
-    return today = mm + '/' + dd + '/' + yyyy;
   }
 
   const handleChange = (e) => {
@@ -59,7 +51,7 @@ const WABAForm = () => {
 
     var raw = JSON.stringify([
       {
-        "Date": getDate(),
+        "Date": new Date(),
         "Name": name,
         "Phone": phone
       }
@@ -73,34 +65,31 @@ const WABAForm = () => {
     };
 
     fetch("https://sheet.best/api/sheets/eac98bf2-c23f-424d-8c93-7b96a933c0cb", requestOptions)
-      .then(response => {
-        setFormSubmitted(true);
-        setApiResponse("We have received your request. Our technician will call you shortly.");
-        setLoading(false);
-      })
-      .catch(error => {
-        setFormSubmitted(true);
-        setSubmissionError(true);
-        setApiResponse("Currently, we are not able to take your submission. Please call us on 8459982237");
-        setLoading(false);
-      });
+    .then(response => {
+      setFormSubmitted(true);
+      setApiResponse("We have received your request. Our technician will call you shortly.");
+      setLoading(false);
+    })
+    .catch(error => {
+      setFormSubmitted(true);
+      setSubmissionError(true);
+      setApiResponse("Currently, we are not able to take your submission. Please call us on 8459982237");
+      setLoading(false);
+    });
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
     const areInputsValid = validateInputs();
     if(areInputsValid) {
+      setLoading(true);
       var myHeaders = new Headers();
       myHeaders.append("Authorization", `Bearer ${process.env.NEXT_PUBLIC_WHATSAPP_TOKEN}`);
       myHeaders.append("Content-Type", "application/json");
-
-      const phoneZeroRemoved = phone.slice(0,1) === 0 ? phone.slice(1) : phone;
-      const phoneWithCountryCode = phoneZeroRemoved.slice(0,2) == 91 ? phoneZeroRemoved : `91${phoneZeroRemoved}`;
   
       var raw = JSON.stringify({
         "messaging_product": "whatsapp",
-        "to": phoneWithCountryCode,
+        "to": phone,
         "type": "template",
         "template": {
           "name": "welcome",
@@ -173,7 +162,7 @@ const WABAForm = () => {
             placeholder='Your mobile number'
             className="rounded-md focus:bg-black-bg focus:text-white focus:border-light-green focus:shadow-none focus:ring-transparent font-sen"
           />
-          {!isNumberValid && <p className="error text-red-500 absolute bottom-0 text-sm">Please enter your phone mumber</p>}
+          {!isNumberValid && <p className="error text-red-500 absolute bottom-0 text-sm">Please enter your 10 digit phone mumber</p>}
         </div>
         <button className="px-4 py-1 md:px-6 md:py-2 text-white text-lg font-sen rounded-md bg-pink mt-2 block" onClick={handleSubmit}>Submit</button>
       </form>
