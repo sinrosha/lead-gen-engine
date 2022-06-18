@@ -61,7 +61,7 @@ const Meta = ({content}) => {
       id="2"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
-        __html: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());gtag('config', 'G-E5EB756ZQ3')"
+        __html: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());gtag('config', 'G-E5EB756ZQ3', {'debug_mode':true })"
       }}
     />
 
