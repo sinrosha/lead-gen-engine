@@ -156,7 +156,7 @@ const WABAForm = () => {
           <input 
             id='phone'
             name='phone'
-            type='text'
+            type='tel'
             value={phone}
             onChange={handleChange}
             placeholder='Your mobile number'
