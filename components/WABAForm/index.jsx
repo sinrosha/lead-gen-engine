@@ -147,7 +147,7 @@ const WABAForm = () => {
   }
 
   return (
-    <div className="form mt-16 lg:mt-0 p-8 md:p-12 bg-form-bg rounded-md w-72 md:w-96 relative">
+    <div className="form mt-16 lg:mt-0 p-8 md:p-12 bg-black-bg rounded-md md:w-96 relative w-80">
       <form action="" className={`max-w-md ${formSubmitted ? "invisible" : ""} ${loading ? "invisible" : ""}`}>
         <div className='form-row flex flex-col pb-6 relative'>
           <label htmlFor='name' className="text-white text-base font-sen pb-2">Name</label>

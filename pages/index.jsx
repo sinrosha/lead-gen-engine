@@ -6,7 +6,7 @@ import content from "../content/home.json"
 import FAQ from "../components/FAQ"
 import GetInTouch from "../components/GetInTouch/Index"
 import Featurelist from "../components/Featurelist"
-
+import Footer from "../components/Footer/index"
 const Home = () => {
   const testimonialContent = [
     {
@@ -159,6 +159,7 @@ const Home = () => {
       {/* <Stats stats={stats}/> */}
       <FAQ FAQS={faqs}/>
       <GetInTouch />
+      <Footer/>
     </Layout>
   )
 }
