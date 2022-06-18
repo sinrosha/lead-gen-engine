@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Testimonial = ({testimonials}) => {
   return (
-    <section className="py-12 md:py-16 bg-[#20222eeb]" id="Testimonail">
+    <section className="py-12 md:py-16 bg-[#20222eeb] bg-cover bg-no-repeat bg-center" style={{'background-image': 'url(/bg-one.jpg)'}} id="Testimonail">
       <h4 className="text-pink text-center text-lg font-bold font-sen mb-2.5">What customers say about us</h4>
       <h3 className="font-bold text-center text-white text-3xl md:text-5xl font-poppins">Testimonials</h3>
       <div className="w-4/5 mx-auto flex flex-wrap flex-1 mt-10 md:mt-14 gap-x-4 md:gap-x-10 gap-y-14">
@@ -12,7 +12,7 @@ const Testimonial = ({testimonials}) => {
               <Image width="120" height="120" src={testimonial.img} className="rounded-full" alt={testimonial.name}/>
             </picture>
             <p className="text-white py-5 md:p-5 text-base md:w-11/12 mx-auto">{testimonial.text}</p>
-            <p className="text-slate-400 mb-1 font-poppins">{testimonial.name}</p>
+            <p className="text-pink mb-1 font-poppins">{testimonial.name}</p>
             <p className="text-slate-300 font-poppins">{testimonial.designation}</p>
           </div>
           )
