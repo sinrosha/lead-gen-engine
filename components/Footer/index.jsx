@@ -12,7 +12,7 @@ const Footer = () => {
       <a href="mailto:handymanservicespvt@gmail.com"><SiGmail className='text-white' size={22}/></a>
       </div>
       <div>
-        <p className="text-white">Copyright © 2022 Handyman</p>
+        <p className="text-white">Copyright ©2022 Handyman</p>
       </div>
       </div>
     </header>
