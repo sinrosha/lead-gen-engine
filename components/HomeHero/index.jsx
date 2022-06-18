@@ -10,6 +10,9 @@ const HomeHero = () => {
           <a href="tel:08459982237" className="font-medium inline-block md:font-semibold md:font-base px-3 py-1 md:px-6 md:py-2 rounded-md bg-pink text-white font-sen">
             Click to call us
           </a>
+          <a href="tel:08459982237" className="font-medium inline-block md:font-semibold md:font-base px-3 py-1 md:px-6 md:py-2 ml-4 border border-solid border-pink rounded-md text-pink bg-white font-sen">
+            8459982237
+          </a>
         </div>
         <WABAForm />
       </div>
