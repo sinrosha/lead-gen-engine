@@ -89,7 +89,7 @@ const WABAForm = () => {
   
       var raw = JSON.stringify({
         "messaging_product": "whatsapp",
-        "to": phone,
+        "to": `91${phone}`,
         "type": "template",
         "template": {
           "name": "welcome",
