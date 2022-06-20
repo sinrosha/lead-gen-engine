@@ -26,14 +26,14 @@ const Home = () => {
     {
       id: 3,
       img: "/farhan-img.jpg",
-      text: "Great service..!!! No worries of any sort ..or of any type of TV...all sort of TV reparis available...",
+      text: "Great service..!!! No worries of any sort ..or of any type of TV...all sort of TV repairs available...",
       name: "Farhan Khan",
       designation: "Youtuber"
     },
     {
       id: 4,
       img: "/kolte-img.jpg",
-      text: "hey were really fast. They sent the technician within 1 hour of my booking. He picked the TV, got the screen replaced and delivered it back the same day.",
+      text: "They were really fast. They sent the technician within 1 hour of my booking. He picked the TV, got the screen replaced and delivered it back the same day.",
       name: "Ajinkya kolte",
       designation: "Network Architect, KPMG"
     }
@@ -92,7 +92,7 @@ const Home = () => {
     },
     {  id:4,
       question: "How long does it take to repair a TV?",
-      answer:"Most sets can be repaired by the next business day. It may take longer if we have to diagnose an uncommon problem (like problems caused by pests or power surges). The biggest factor in repair time is parts availability. If parts are not found in San Antonio, ground shipping from the most common distributors can take 4-5 business days."
+      answer:"Most sets can be repaired by the next business day. It may take longer if we have to diagnose an uncommon problem (like problems caused by pests or power surges). The biggest factor in repair time is parts availability. If parts are not found in Mumbai, ground shipping from the most common distributors can take 4-5 business days."
 
     },
     {  id:5,

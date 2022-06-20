@@ -12,7 +12,7 @@ const Footer = () => {
       <a href="mailto:handymanservicespvt@gmail.com"><CgMail className='text-white' size={24}/></a>
       </div>
       <div>
-        <p className="text-white">Copyright ©2022 Handyman</p>
+        <p className="text-white mt-2 md:mt-0">Copyright ©2022 Handyman</p>
       </div>
       </div>
     </header>
