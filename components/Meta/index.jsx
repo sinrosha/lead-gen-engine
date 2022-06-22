@@ -65,20 +65,20 @@ const Meta = ({content}) => {
       }}
     />
 
-    <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=AW-10904157007"></Script>
+    <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=AW-10936363112"></Script>
     <Script
       id="3"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
-        __html: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());gtag('config', 'AW-10904157007');"
+        __html: " window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-10936363112');"
       }}
     />
 
     <Script
-      id="4"
+      id="3"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
-        __html: "gtag('event', 'conversion', {'send_to':'AW-10904157007/gO9RCP6wy8YDEM_2wM8o'})"
+        __html: " gtag('event', 'conversion', {'send_to': 'AW-10936363112/orudCMz5yccDEOjQ7t4o','transaction_id': ''});"
       }}
     />
   </>
