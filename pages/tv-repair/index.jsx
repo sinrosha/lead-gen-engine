@@ -41,38 +41,32 @@ const TV = () => {
     {
       id: 1,
       name: "Sony",
-      src: "/logos/sony-logo.png"
+      src: "/logos/tv.svg",
+      text: "TV <br/> Repair",
+      link: "/tv-repair"
     },
-     {
-       id: 2,
-       name: "Samsung",
-       src: "/logos/samsung-logo.png"
-     },
+    {
+      id: 2,
+      name: "Samsung",
+      src: "/logos/wash.svg",
+      text: `Washing Machine <br/> Repair`,
+      link: "#"
+    },
     {
       id: 3,
       name: "Philips",
-      src: "/logos/philips-logo.png"
+      src: "/logos/ac.svg",
+      text: "Air conditioner <br/> repair",
+      link: "#"
     },
     {
       id: 4,
       name: "Panasonic",
-      src: "/logos/panasonic-logo.png"
+      src: "/logos/fridge.svg",
+      text: "Fridge <br/> repair",
+      link: "#"
     },
-    {
-      id: 5,
-      name: "Micromax",
-      src: "/logos/micromax-logo.png"
-    },
-    {
-      id: 6,
-      name: "MI",
-      src: "/logos/mi-logo.png"
-    },{
-      id: 7,
-      name: "LG",
-      src: "/logos/lg-logo.png"
-    }
-  ]
+  ];
   const faqs = [
     { id:1,
       question: "Are you factory trained and authorized to provide warranty and service contract repairs?",

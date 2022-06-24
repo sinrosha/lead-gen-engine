@@ -42,24 +42,28 @@ const Home = () => {
       name: "Sony",
       src: "/logos/tv.svg",
       text: "TV <br/> Repair",
+      link: "/tv-repair"
     },
     {
       id: 2,
       name: "Samsung",
       src: "/logos/wash.svg",
       text: `Washing Machine <br/> Repair`,
+      link: "#"
     },
     {
       id: 3,
       name: "Philips",
       src: "/logos/ac.svg",
       text: "Air conditioner <br/> repair",
+      link: "#"
     },
     {
       id: 4,
       name: "Panasonic",
       src: "/logos/fridge.svg",
       text: "Fridge <br/> repair",
+      link: "#"
     },
   ];
   const faqs = [

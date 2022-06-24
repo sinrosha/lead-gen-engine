@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 
 const BrandSlider = ({ brands }) => {
   return (
@@ -12,20 +13,22 @@ const BrandSlider = ({ brands }) => {
       <div className="mx-auto flex flex-wrap justify-center md:container md:mx-auto pt-8 gap-5 columns-4 ">
         {brands.map((brand) => (
           <div
-            className="logo  hover:bg-pink bg-white p-4 rounded-md flex flex-col w-10/12 md:w-auto"
+            className="logo cursor-pointer hover:bg-pink bg-white p-4 rounded-md flex flex-col w-10/12 md:w-auto"
             key={brand.id}
           >
-            <Image
-              className="text-white fill-white"
-              width="200px"
-              height="100px"
-              src={brand.src}
-              alt={brand.name}
-            />
-            <p
-              dangerouslySetInnerHTML={{ __html: brand.text }}
-              className="hover:text-white text-center pt-4 font-bold text-2xl text-black"
-            />
+            <a href={brand.link}>
+              <Image
+                className="text-white fill-white"
+                width="200px"
+                height="100px"
+                src={brand.src}
+                alt={brand.name}
+              />
+              <p
+                dangerouslySetInnerHTML={{ __html: brand.text }}
+                className="hover:text-white text-center pt-4 font-bold text-2xl text-black"
+              />
+            </a>
           </div>
         ))}
       </div>
