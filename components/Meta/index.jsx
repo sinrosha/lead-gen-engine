@@ -10,6 +10,7 @@ const Meta = ({content}) => {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="theme-color" content="#000" />
       <meta name="description" content={meta.description} />
+      <meta name="google-site-verification" value="ysIiE1C38NHqy154CafLy0lT29gKc71yw2UnaqqKanI" />
       <link rel="shortcut icon" href="/favicon.ico" />
       <meta name="robots" content="index,follow" />
       <meta name="googlebot" content="index,follow" />
