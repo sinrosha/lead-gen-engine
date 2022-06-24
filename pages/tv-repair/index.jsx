@@ -1,11 +1,12 @@
-import Layout from "../components/Layout"
-import HomeHero from "../components/HomeHero"
-import Testimonial from "../components/Testimonail"
-import BrandSlider from "../components/BrandSlider"
-import content from "../content/home.json"
-import FAQ from "../components/FAQ"
-import Featurelist from "../components/Featurelist"
-const Home = () => {
+import Layout from "../../components/Layout"
+import HomeHero from "../../components/HomeHero"
+import Testimonial from "../../components/Testimonail"
+import BrandSlider from "../../components/BrandSlider"
+import content from "../../content/home.json"
+import FAQ from "../../components/FAQ"
+import Featurelist from "../../components/Featurelist"
+
+const TV = () => {
   const testimonialContent = [
     {
       id: 1,
@@ -159,6 +160,6 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default TV;
 
 
