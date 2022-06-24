@@ -1,6 +1,7 @@
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { MdOutlineFacebook } from 'react-icons/md';
 import { CgMail } from 'react-icons/cg';
+import Link from "next/link"
 
 const Footer = () => {
   return (
@@ -13,8 +14,8 @@ const Footer = () => {
         </div>
         <div className="ml-8 mt-4 md:mt-0">
           <ul className="flex">
-            <li className="text-white"><a href="/disclaimer">Disclaimer</a></li>
-            <li className="text-white ml-8"><a href="/privacy-policy">Privacy Policy</a></li>
+            <li className="text-white"><Link href="/disclaimer"><a>Disclaimer</a></Link></li>
+            <li className="text-white ml-8"><Link href="/privacy-policy"><a>Privacy Policy</a></Link></li>
           </ul>
         </div>
         <div>
