@@ -4,9 +4,7 @@ import Testimonial from "../components/Testimonail";
 import BrandSlider from "../components/BrandSlider";
 import content from "../content/home.json";
 import FAQ from "../components/FAQ";
-import GetInTouch from "../components/GetInTouch/Index";
 import Featurelist from "../components/Featurelist";
-import Footer from "../components/Footer/index";
 const Home = () => {
   const testimonialContent = [
     {
@@ -152,10 +150,7 @@ const Home = () => {
       <BrandSlider brands={brands} />
       <Testimonial testimonials={testimonialContent} />
       <Featurelist features={features} />
-      {/* <Stats stats={stats}/> */}
       <FAQ FAQS={faqs} />
-      <GetInTouch />
-      <Footer />
     </Layout>
   );
 };

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import Meta from "../Meta"
 import Header from '../Header'
+import Footer from "../Footer"
 import { useCookies } from "react-cookie";
 
 const Layout = ({content, children}) => {
@@ -83,7 +84,7 @@ const Layout = ({content, children}) => {
         <main>
           {children}
         </main>
-        {/* <footer>Footer</footer> */}
+        <Footer />
       </div>
     </>
   )
