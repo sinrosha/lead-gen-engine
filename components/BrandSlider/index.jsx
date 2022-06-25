@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
 const BrandSlider = ({ brands }) => {
   return (
@@ -13,7 +13,7 @@ const BrandSlider = ({ brands }) => {
       <div className="mx-auto flex flex-wrap justify-center md:container md:mx-auto pt-8 gap-5 columns-4 ">
         {brands.map((brand) => (
           <div
-            className="logo cursor-pointer hover:bg-pink bg-white p-4 rounded-md flex flex-col w-10/12 md:w-auto"
+            className="logo cursor-pointer hover:bg-pink bg-white p-4 rounded-md flex flex-col items-center w-10/12 md:w-auto"
             key={brand.id}
           >
             <a href={brand.link}>

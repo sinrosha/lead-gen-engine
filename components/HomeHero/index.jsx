@@ -1,6 +1,6 @@
 import WABAForm from "../WABAForm";
 
-const HomeHero = () => {
+const HomeHero = ({ hero }) => {
   return (
     <section
       style={{ backgroundImage: "url(/bg-one.jpg)" }}
@@ -9,14 +9,17 @@ const HomeHero = () => {
     >
       <div className="w-10/12 md:w-4/5 mx-auto flex flex-col lg:flex-row justify-between items-center">
         <div className="content md:w-auto">
-          <h1 className="text-white text-4xl leading-tight md:leading-snug md:text-5xl font-sen">
-            HandyMan <br className="hidden lg:block" /> Repair and Services
-          </h1>
-          <p className="text-white text-xl font-poppins py-6 md:py-8 leading-normal md:w-8/12">
-            HandyMan Repair and Services is one of the trusted brand of Mumbai.
-            We repair all kind of home appliance such as LCD, LED TV, WASHING
-            MACHINE, REFRIGERATOR and AIR CONDITIONER of all brands.
-          </p>
+          {hero.map((heros) => (
+            <>
+              <h1 className="text-white text-4xl leading-tight md:leading-snug md:text-5xl font-sen">
+                {heros.title}
+              </h1>
+              <p className="text-white text-xl font-poppins py-6 md:py-5 leading-normal md:w-8/12">
+                {heros.subTitle}
+              </p>
+            </>
+          ))}
+
           <div className="">
             <a
               href="tel:08459982237"
