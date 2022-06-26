@@ -25,24 +25,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div id="elemID031021">
-        <script
-          type="text/javascript"
-          src="//s2.tracemyip.org/tracker/lgUrl.php?random='+Math.random()+'&amp;stlVar2=1202&amp;rgtype=4684NR-IPIB&amp;pidnVar2=97060&amp;prtVar2=4&amp;scvVar2=12"
-        ></script>
-        <noscript>
-          <a
-            title="Web site reporting"
-            href="https://www.tracemyip.org/website-analytics.htm"
-          >
-            <img
-              src="//s2.tracemyip.org/tracker/1202/4684NR-IPIB/97060/4/12/ans/"
-              alt="web site reporting"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </a>
-        </noscript>
-      </div>
     </header>
   );
 };
