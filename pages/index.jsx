@@ -42,30 +42,31 @@ const Home = () => {
       name: "Sony",
       src: "/logos/tv.svg",
       text: "TV <br/> Repair",
-      link: "/tv-repair"
+      link: "/tv-repair",
     },
     {
       id: 2,
       name: "Samsung",
       src: "/logos/wash.svg",
       text: `Washing Machine <br/> Repair`,
-      link: "#"
+      link: "/washingMachine-repair",
     },
     {
       id: 3,
       name: "Philips",
       src: "/logos/ac.svg",
       text: "Air conditioner <br/> repair",
-      link: "#"
+      link: "#",
     },
     {
       id: 4,
       name: "Panasonic",
       src: "/logos/fridge.svg",
       text: "Fridge <br/> repair",
-      link: "#"
+      link: "#",
     },
   ];
+
   const faqs = [
     {
       id: 1,
@@ -147,10 +148,17 @@ const Home = () => {
       text: "150k+",
     },
   ];
-
+  const hero = [
+    {
+      title: "HandyMan Repair and Services",
+      subTitle:
+        "HandyMan Repair and Services is one of the trusted brand of Mumbai. We repair all kind of home appliance such as LCD, LED TV, WASHING MACHINE, REFRIGERATOR and AIR CONDITIONER of all brands.",
+    },
+  ];
   return (
     <Layout content={content}>
-      <HomeHero />
+      <HomeHero hero={hero} />
+      <BrandSlider brands={brands} />
       <Testimonial testimonials={testimonialContent} />
       <Featurelist features={features} />
       <FAQ FAQS={faqs} />

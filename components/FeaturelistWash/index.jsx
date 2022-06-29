@@ -1,5 +1,5 @@
 import Image from "next/image";
-function Featurelist({ features }) {
+function FeaturelistWash({ features }) {
   return (
     <section id="Featurelist" className="relative py-12 md:py-16 bg-black-bg">
       <div className="row flex flex-col items-center justify-between mx-auto row w-4/5 md:flex-row">
@@ -36,7 +36,7 @@ function Featurelist({ features }) {
         </div>
         <div className="col-md-6 w-full md:w-2/4 flex mt-6 md:mt-0 flex-col items-center justify-center">
           <Image
-            src="/tv-repair.webp"
+            src="/washing-repair.jpg"
             className="w-100 object-cover rounded-full"
             alt="placeholder"
             width="450"
@@ -48,4 +48,4 @@ function Featurelist({ features }) {
   );
 }
 
-export default Featurelist;
+export default FeaturelistWash;
