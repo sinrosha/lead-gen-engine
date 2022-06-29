@@ -151,7 +151,6 @@ const Home = () => {
   return (
     <Layout content={content}>
       <HomeHero />
-      <BrandSlider brands={brands} />
       <Testimonial testimonials={testimonialContent} />
       <Featurelist features={features} />
       <FAQ FAQS={faqs} />
