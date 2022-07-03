@@ -56,14 +56,14 @@ const TV = () => {
       name: "Philips",
       src: "/logos/ac.svg",
       text: "Air conditioner <br/> repair",
-      link: "#",
+      link: "",
     },
     {
       id: 4,
       name: "Panasonic",
       src: "/logos/fridge.svg",
       text: "Fridge <br/> repair",
-      link: "#",
+      link: "",
     },
   ];
   const logo = [
@@ -193,10 +193,10 @@ const TV = () => {
   ];
   return (
     <Layout content={content}>
-      <HomeHero hero={hero}/>
+      <HomeHero hero={hero} />
       <Testimonial testimonials={testimonialContent} />
-      <Featurelist features={features}/>
-      <FAQ FAQS={faqs}/>
+      <Featurelist features={features} />
+      <FAQ FAQS={faqs} />
     </Layout>
   );
 };

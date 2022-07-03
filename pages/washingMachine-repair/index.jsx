@@ -55,14 +55,14 @@ const Washing = () => {
       name: "Philips",
       src: "/logos/ac.svg",
       text: "Air conditioner <br/> repair",
-      link: "#",
+      link: "",
     },
     {
       id: 4,
       name: "Panasonic",
       src: "/logos/fridge.svg",
       text: "Fridge <br/> repair",
-      link: "#",
+      link: "",
     },
   ];
   const logo = [

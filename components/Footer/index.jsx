@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="ml-8 mt-4 md:mt-0">
           <ul className="flex">
-            <li className="text-white">
+            {/* <li className="text-white">
               <Link href="/disclaimer">
                 <a>Disclaimer</a>
               </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
               <Link href="/privacy-policy">
                 <a>Privacy Policy</a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div>
