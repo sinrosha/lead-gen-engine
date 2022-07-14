@@ -112,7 +112,7 @@ const Home = () => {
     },
     {
       id: 3,
-      para: "Minimum Visiting Charge",
+      para: "Rs 99 Visiting Charge",
       img: "/three.png",
     },
     {
